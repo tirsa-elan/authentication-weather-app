@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "userName": "anna",
+      "number": "0919",
+      "password": "4566",
+      "id": "db48"
+    },
+    {
+      "id": "2a60",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "5090",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "993d",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "9d10",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "f15e",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "3a25",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    },
+    {
+      "id": "5bb7",
+      "userName": "amir",
+      "number": "09126843061",
+      "password": "sfsfdsrfgwsrtzahra"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "Zahra",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "Zahra2",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "username": "Zahra3",
+      "password": "123456"
+    }
+  ]
+}

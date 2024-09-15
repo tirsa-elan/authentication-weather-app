@@ -1,0 +1,47 @@
+<section>
+    <div class="container-fuild">
+        <div class="screen">
+            <div class="screen__content">
+              
+                <form class="login" [formGroup]="regForm">
+                    <div >
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input formControlName="userName"  type="text" class="login__input" placeholder="نام کاربری خود را وارد کنین"[(ngModel)]="username"  >
+                         <div  *ngIf="userName?.touched && userName?.errors" >
+                            <span *ngIf="userName?.hasError('required')" style="color: red;">نام کاربری خود را وارد کنین</span>
+                         </div>
+                    </div>
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input formControlName="userNumber"  type="text" class="login__input" placeholder="شماره موبایل خود را وارد کنید" [(ngModel)]="usernumber" >
+                        <div  *ngIf="userNumber?.touched && userNumber?.errors" >
+                            <span *ngIf="userNumber?.hasError('required')" style="color: red;">شماره موبایل خود را وارد کنید</span>
+                         </div>
+                    </div>
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input formControlName="password"  type="text" class="login__input" placeholder="پسورد خود را وارد کنین" [(ngModel)]="userpass" >
+                        <div  *ngIf="password?.touched && password?.errors" >
+                            <span *ngIf="password?.hasError('required')" style="color: red;">پسورد  خود را وارد کنین</span>
+                         </div>
+                    </div>
+
+                    <button class="button login__submit" style="display: flex;">
+                        <span class="button__text" style="margin: auto;" (click)="sendData()">ثبت نام</span>
+                    </button>
+                </div>
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+</section>
+

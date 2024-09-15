@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blu-1: #3C429E;
+    --blue-2: #4C52AD;
+    --yellow-1: #FAC742;
+    --white: #FFF;
+    --grey-1: #EDEDED;
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-light: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--blu-1);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+}

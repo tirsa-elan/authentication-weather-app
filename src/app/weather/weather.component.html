@@ -1,0 +1,74 @@
+<section class="weather-sec">
+  <div class="container">
+    <div class="search-input">
+      <input type="text" (keyup.enter)="changeCityName($event)" class="input-button mb-3"
+        placeholder="نام شهر را وارد کنید">
+    </div>
+    <div class="weather-box">
+      <div class="upper-data">
+        <img src="../assets/images/nightcold.avif" alt="">
+        <div class="weather-data">
+          <div class="location">{{weatherData.cityName}}</div>
+          <div class="temparture">{{weatherData.temperatureC}}°C</div>
+        </div>
+      </div>
+      <div class="lower-data me-2">
+        <div class="more-info-label mb-5">
+          More information
+        </div>
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div>
+                <img src="../assets/images/temperature-cold.png" alt="" class="img">
+                <span class="span ms-2">tempC</span>
+              </div>
+              <span class="mt-2 text-light">
+                {{weatherData.temperatureC}} °C
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div>
+                <img src="../assets/images/hot-tempurture.png" alt="" class="img">
+                <span class="span ms-2">tempF</span>
+              </div>
+
+              <span class="mt-2 text-light">
+                {{weatherData.temperatureF}} °F
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div>
+                <img src="../assets/images/cloudy-tempurure.png" alt="" class="img">
+                <span class="span ms-2">summery</span>
+              </div>
+
+              <span class="mt-2 text-light">
+                {{weatherData.summary}} %
+              </span>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div>
+                <img src="../assets/images/wind-tempurture.png" alt="" class="img">
+                <span class="span ms-2">date</span>
+              </div>
+              <span class="mt-2 text-light">
+                {{weatherData.summary}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
