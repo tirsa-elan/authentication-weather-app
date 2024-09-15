@@ -10,11 +10,6 @@ export class AuthService {
     constructor(private http: HttpClient) { }
 
     getUsers(): Observable<any> {
-        let httpOption = {
-            headers: new HttpHeaders()
-            .set("Authorization", localStorage.getItem('token')!)
-        }
-      
-        return this.http.get(this.baseUrl,httpOption)
+        return this.http.get(this.baseUrl)
     }
 }
